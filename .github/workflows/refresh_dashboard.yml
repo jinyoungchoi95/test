@@ -3,8 +3,8 @@ name: refresh_dashboard
 on:
   push:
     branches: [ master ]
-    branches-ignore: 
-      - 'master'
+    paths-ignore: 
+      - 'README.md'
 jobs:
   build:
 
