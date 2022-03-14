@@ -24,9 +24,9 @@ jobs:
           sudo timedatectl set-timezone Asia/Seoul
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          git remote add upstream https://github.com/woowacourse-study/2022-daily-planner.git
-          git fetch upstream main
-          git rebase upstream/main
+          git remote add upstream https://github.com/jinyoungchoi95/test.git
+          git fetch upstream master
+          git rebase upstream/master
           ./gradlew run
           git commit --allow-empty -m "refresh dash board in README.md" -a
       - name: Push changes
